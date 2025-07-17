@@ -4,6 +4,7 @@
     <title>Menu | <%= restaurant.name %></title>
   </head>
   <body>
+    <%- include('partials/navbar') %>
     <h1>Menu for <%= restaurant.name %></h1>
     <ul>
       <% restaurant.menu.forEach(item => { %>
