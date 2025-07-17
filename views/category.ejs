@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= categoryName %> | <%= restaurant.name %></title>
+  </head>
+  <body>
+    <h1><%= categoryName %> at <%= restaurant.name %></h1>
+    <ul>
+      <% categoryItems.forEach(item => { %>
+        <li>
+          <strong><%= item.name %></strong> - $<%= item.price.toFixed(2) %><br />
+          <em><%= item.details %></em><br />
+          Rating: <%= item.rating %>/5
+        </li>
+      <% }) %>
+    </ul>
+    <a href="/menu">Back to Full Menu</a>
+  </body>
+</html>
