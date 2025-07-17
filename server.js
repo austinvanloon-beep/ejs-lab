@@ -51,5 +51,5 @@ app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 
 app.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
-});
+  console.log("server is running on http://localhost:3000")
+})
